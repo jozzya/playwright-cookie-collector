@@ -1,0 +1,12 @@
+{
+  "name": "Playwright Cookie Crawler",
+  "version": "1.0.0",
+  "description": "A domain-limited crawler that collects cookies and localStorage snapshots",
+  "main": "crawler.js",
+  "scripts": {
+    "start": "node crawler.js"
+  },
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}
