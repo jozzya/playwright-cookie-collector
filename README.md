@@ -24,8 +24,8 @@ It is designed to only visit pages within the starting domain and avoid external
 1. Clone the repository:
 
    ```bash
-   git clone <repo-url>
-   cd <repo-folder>
+   git clone git@github.com:jozzya/playwright-cookie-collector.git playwright-cookie-collector
+   cd playwright-cookie-collector
    ```
 
 2. Build the docker environment
@@ -35,7 +35,7 @@ docker build --no-cache -t playwright-crawler:latest .
 3. Run the docker script
 ```
 docker run --rm \
-  -e START_URL="https://example.com" \
+  -e START_URL="https://change-me.com" \
   -e MAX_PAGES=10 \
   -e HEADLESS=true \
   -e WAIT_AFTER_CLICK_MS=600 \
@@ -43,4 +43,4 @@ docker run --rm \
   -v "$(pwd)/results":/app/results \
   playwright-crawler
 ```
-
+4. Review the cookies.json for all unique cookies found by the crawler.
