@@ -1,4 +1,4 @@
-# Playwright Cookie Crawler
+# Playwright Cookie Collector
 
 ## Overview
 
